@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.converter, .results, .thermometer {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.thermometer-outer {
+    width: 50px;
+    height: 300px;
+    background: #ddd;
+    border-radius: 25px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.thermometer-inner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, #ff0000, #ffa500);
+    height: 0;
+    transition: height 0.5s ease;
+}
